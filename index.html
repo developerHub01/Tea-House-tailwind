@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'color-dark': '#1C1C1C',
+                        'color-para': '#777777',
+                        'color-yellow': '#FF8938',
+                        'color-red': '#F00'
+                    },
+
+                },
+                container: {
+                    center: true,
+                    padding: {
+                        DEFAULT: '20px',
+                        md: '50px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body style="font-family: 'Manrope', sans-serif;">
+    <header class="bg-white">
+        <div class="container py-20">
+            <div class="grid place-items-center md:grid-cols-2 gap-x-8 gap-y-12 text-center md:text-left">
+                <div class="relative md:order-2 grid place-items-center mb-10 md:mb-0 w-full">
+                    <img src="images/banner.png" class="max-w-sm w-full" />
+                    <div
+                        class="rounded-md shadow-2xl p-5 flex gap-4 items-center absolute bg-white bottom-0 left-1/2 -translate-x-1/2 w-64 translate-y-1/2">
+                        <img src="images/star.png" alt="">
+                        <div class="text-left">
+                            <p class="text-color-dark text-2xl font-extrabold">5.00</p>
+                            <p class="text-color-para text-base font-semibold">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-5xl font-bold leading-tight">It's good <br />tea time at The <br />Tea House</h1>
+                    <p class="py-6 text-color-para text-lg font-medium">Tea and Botanical Solutions Supplier Give
+                        Optimum Satisfaction To Your Taste Buds.</p>
+                    <button
+                        class="btn btn-primary text-white text-xl font-bold px-5 py-4 h-auto bg-gradient-to-r from-color-yellow to-color-red border-none hover:from-color-red hover:to-color-yellow transition-all duration-300 ease-in-out">Explore
+                        More <img src="images/arrow.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="feature">
+            <div class="container py-20 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-color-dark text-5xl font-extrabold pb-4">Our Featured Products</h2>
+                    <p class="text-color-para text-base font-medium leading-relaxed">There are many variations of
+                        passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                        injected humour, or randomised words which don't look even slightly believable. </p>
+                </div>
+                <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="card card-compact w-full bg-gradient-to-b from-[#F4F4F4] px-5 py-7 rounded-md cursor-pointer">
+                        <figure class="pb-5">
+                            <img src="images/tea-1.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-color-dark text-2xl font-extrabold block">Milk Tea</h3>
+                            <p class="text-color-para text-base">Creamer could be replaced by fresh milk</p>
+                        </div>
+                    </div>
+                    <div class="card card-compact w-full bg-gradient-to-b from-[#F4F4F4] px-5 py-7 rounded-md cursor-pointer">
+                        <figure class="pb-5">
+                            <img src="images/tea-2.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-color-dark text-2xl font-extrabold block">Milk Tea</h3>
+                            <p class="text-color-para text-base">Creamer could be replaced by fresh milk</p>
+                        </div>
+                    </div>
+                    <div class="card card-compact w-full bg-gradient-to-b from-[#F4F4F4] px-5 py-7 rounded-md cursor-pointer">
+                        <figure class="pb-5">
+                            <img src="images/tea-3.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-color-dark text-2xl font-extrabold block">Milk Tea</h3>
+                            <p class="text-color-para text-base">Creamer could be replaced by fresh milk</p>
+                        </div>
+                    </div>
+                    <div class="card card-compact w-full bg-gradient-to-b from-[#F4F4F4] px-5 py-7 rounded-md cursor-pointer">
+                        <figure class="pb-5">
+                            <img src="images/tea-4.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-color-dark text-2xl font-extrabold block">Milk Tea</h3>
+                            <p class="text-color-para text-base">Creamer could be replaced by fresh milk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
